@@ -83,8 +83,8 @@ def main(n_classes, epochs = 100, batch_size = 64):
 
     model.fit_generator(generator=train_generator,
         validation_data=test_generator,
-        steps_per_epoch = 75750 // batch_size,
-	    validation_steps = 25250 // batch_size,
+        steps_per_epoch = train_generator.n // batch_size,
+	    validation_steps = test_generator.n // batch_size,
         epochs=epochs,
         verbose=1,
         callbacks = callbacks
