@@ -92,4 +92,4 @@ def main(n_classes, epochs = 100, batch_size = 64):
 
 
 if __name__ == '__main__':
-    main(101)
+    main(102)
